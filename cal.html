@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>用JavaScript实现简易计算器</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="cal.css">
+</head>
+<body>
+	<div id="cal">
+		<form name="calculator" action="" method="get">
+			<div id="cal-head">
+				<div id="cal-head-con">
+					<h2>Calculator <span>——用JavaScript实现简易计算器</span></h2>
+					<div id="cal-head-img">
+					<img src="images/battery.png" alt="" width="40" height="20">
+					</div>
+					<div class="cal-screen">
+						<input type="text" onfocus="this.blur()" value="0" class="screen" id="screen"></input>
+					</div>
+				</div>
+			</div>
+			<div id="cal-btn">
+				<ul>
+					<a onclick="sw()" class="switch">ON<br/>——</br>OFF</a>
+					<li onclick="command(1)">1</li>
+					<li onclick="command(2)">2</li>
+					<li onclick="command(3)">3</li>
+					<li class="func-btn" onclick="clearScreen()">c</li>
+					<li class="func-btn" onclick="plus()">+</li>
+					<li onclick="command(4)">4</li>
+					<li onclick="command(5)">5</li>
+					<li onclick="command(6)">6</li>
+					<li class="func-btn" onclick="del()">←</li>
+					<li class="func-btn" onclick="minus()">-</li>
+					<li onclick="command(7)">7</li>
+					<li onclick="command(8)">8</li>
+					<li onclick="command(9)">9</li>
+					<li class="func-btn" onclick="persent()">%</li>
+					<li class="func-btn" onclick="times()">x</li>
+					<li onclick="command(0)">0</li>
+					<li onclick="dbzero()">00</li>
+					<li onclick="dot()">.</li>
+					<li class="func-btn" onclick="equal()">=</li>
+					<li class="func-btn" onclick="divide()">÷</li>
+				</ul>
+			</div>
+			<div id="cal-foot">
+				<span id="err"></span>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="cal.js"></script>
+</body>
+</html>
